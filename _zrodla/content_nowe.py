@@ -1,0 +1,201 @@
+# -*- coding: utf-8 -*-
+# Teksty strony w językach: portugalski (Brazylia), włoski, turecki.
+from content import T, COMPANY, NIP, STREET, CITY, M, APPPRIV
+
+# ---------------------------------------------------------------- PORTUGUÊS (BRASIL)
+T["pt"] = dict(
+    nav=["Início", "Pediatria LEKI", "Contato", "Privacidade"],
+    lang_aria="Idioma",
+    home_title="MikoSokPhoto – Mikołaj Sokołowski",
+    home_desc="MikoSokPhoto Mikołaj Sokołowski – Cracóvia, Polônia. Dados da empresa e contato.",
+    home_sub="Mikołaj Sokołowski · Cracóvia, Polônia",
+    logo_alt="Logotipo da MikoSokPhoto",
+    contact_title="Contato – MikoSokPhoto",
+    contact_desc="Dados de contato da MikoSokPhoto Mikołaj Sokołowski, Cracóvia, Polônia.",
+    contact_h1="Contato",
+    labels=["Empresa", "Endereço", "Nº fiscal (NIP)", "E-mail", "Telefone"],
+    country="Polônia",
+    priv_title="Política de privacidade – MikoSokPhoto",
+    priv_desc="Política de privacidade do site e dos aplicativos da MikoSokPhoto.",
+    priv_h1="Política de privacidade",
+    priv_date="Em vigor desde 12 de novembro de 2026.",
+    priv=[
+        ("1. Controlador dos dados", f"O controlador dos dados pessoais é Mikołaj Sokołowski, que exerce atividade empresarial com o nome {COMPANY}, {STREET}, {CITY}, Polônia, nº fiscal (NIP) {NIP}. Contato para questões de proteção de dados: {M}."),
+        ("2. Abrangência", "Esta política se aplica ao site mikosokphoto.pl e aos aplicativos móveis publicados pela MikoSokPhoto no Google Play."),
+        ("3. Site", "O site não usa cookies, ferramentas de análise nem formulários. Ele é hospedado no GitHub Pages (GitHub, Inc.), que pode registrar automaticamente dados técnicos de conexão, como o endereço IP, para garantir a segurança e o funcionamento do serviço. O tratamento desses dados pelo GitHub é descrito na declaração de privacidade do GitHub."),
+        ("4. Contato por e-mail e telefone", "Se você entrar em contato conosco por e-mail ou telefone, tratamos os dados informados (por exemplo, nome, e-mail, telefone, conteúdo da mensagem) apenas para responder e atender à sua solicitação, com base no art. 6.º, n.º 1, alínea f, do RGPD da União Europeia (interesse legítimo). Guardamos os dados pelo tempo necessário para atender à solicitação e, depois, pelo prazo de prescrição de eventuais reclamações."),
+        ("5. Aplicativos móveis", f"Os aplicativos da MikoSokPhoto não exigem conta e não coletam dados pessoais, salvo indicação em contrário na descrição de cada aplicativo. Os dados inseridos nos aplicativos ficam armazenados localmente no dispositivo do usuário e não são enviados ao controlador. As permissões solicitadas são usadas apenas para as funções do aplicativo. Se um aplicativo tratar dados adicionais, isso será informado nesta política e na seção “Segurança dos dados” da sua página no Google Play. O aplicativo Pediatria LEKI tem sua própria <a {APPPRIV}>política de privacidade</a> detalhada."),
+        ("6. Destinatários", "Os dados não são vendidos nem compartilhados com terceiros para fins de marketing. Podem ser repassados apenas a prestadores de serviços técnicos (por exemplo, hospedagem, e-mail), na medida do necessário, ou a autoridades autorizadas por lei."),
+        ("7. Seus direitos", f"Você tem direito de acessar, corrigir e excluir seus dados, de limitar o tratamento, à portabilidade e de se opor ao tratamento. Também pode apresentar reclamação à autoridade de controle polonesa, o Presidente do Escritório de Proteção de Dados Pessoais (UODO, ul. Stawki 2, 00-193 Varsóvia). Para exercer seus direitos, escreva para {M}."),
+        ("8. Alterações", "Esta política pode ser atualizada, por exemplo, quando novos aplicativos forem publicados. A versão atual está sempre disponível nesta página."),
+    ],
+    app_title="Pediatria LEKI – MikoSokPhoto",
+    app_desc="Pediatria LEKI – aplicativo de treinamento para calcular rapidamente doses de medicamentos em cursos de simulação médica pediátrica.",
+    app_lead="Aplicativo de treinamento para calcular rapidamente doses de medicamentos em cenários de simulação médica pediátrica.",
+    app_notice="<strong>Somente para aprendizado e simulação.</strong> O aplicativo serve para praticar com casos de treinamento em cursos de pediatria. Não se destina à tomada de decisões sobre pacientes reais e não foi validado para uso clínico.",
+    app_sections=[
+        ("Para que serve", [
+            "O Pediatria LEKI foi criado para cursos e sessões de simulação em emergências pediátricas. Permite que participantes e instrutores calculem em segundos as doses de medicamentos, as taxas de infusão e os tamanhos de equipamentos para a criança ou o recém-nascido do cenário, para que possam se concentrar na conduta durante o exercício e, depois, na discussão dos resultados.",
+            "Basta inserir os dados do caso, e o aplicativo mostra as doses calculadas, os tamanhos de equipamentos e os valores de referência para comparar com as decisões tomadas na simulação."]),
+        ("Como funciona", [
+            ("Dados do caso", "peso inserido manualmente, estimado pela idade ou obtido pelo comprimento na fita de Broselow. Modo recém-nascido separado, com peso em gramas, idade gestacional e idade em dias."),
+            ("Doses rápidas de medicamentos", "blocos com as doses calculadas, agrupados em abas (RCP, dor, respiração, outros), um painel de SRI com medicamentos para intubação e os detalhes de cada medicamento, com esquemas posológicos e fontes. O aplicativo avisa quando um medicamento não é indicado para a idade ou quando faltam dados para o cálculo."),
+            ("Sinais vitais", "valores normais por idade e, em recém-nascidos, percentis de FC, FR, PAS e PAM."),
+            ("Via aérea e reanimação", "tamanho e profundidade de inserção do tubo, energia de desfibrilação, relações de RCP e parâmetros iniciais do ventilador após RCE."),
+            ("Calculadoras", "bomba de infusão (concentração e velocidade em ml/h) e “Calcular dose” para qualquer medicamento."),
+            ("Catálogo próprio de medicamentos", "o instrutor pode adicionar seus próprios medicamentos e categorias, fixá-los nas doses rápidas e transferir o catálogo para outro dispositivo com um arquivo de cópia."),
+            ("Metodologia, fórmulas e fontes", "descrição dos cálculos e das fontes de dados (incluindo bulas, ERC, UK-WHO), útil na discussão do cenário.")]),
+        ("Privacidade e uso offline", [
+            f"O aplicativo funciona totalmente no dispositivo: sem conta, sem internet, sem anúncios nem análises. Os dados do caso não são salvos nem enviados. Nos exercícios, use apenas dados fictícios. Detalhes: <a {APPPRIV}>política de privacidade do Pediatria LEKI</a>."]),
+        ("Para quem", [
+            "Para participantes e instrutores de cursos de pediatria, estudantes e profissionais de saúde que praticam cenários de simulação. O aplicativo não se destina a crianças."]),
+        ("Disponibilidade", [
+            "Aplicativo para Android (em breve no Google Play) e versão que roda no navegador. Idiomas: polonês, inglês, alemão, espanhol, francês, ucraniano, português (Brasil), italiano e turco."]),
+    ],
+    ap_title="Política de privacidade – Pediatria LEKI",
+    ap_desc="Política de privacidade do aplicativo Pediatria LEKI (pl.pediatrialeki.mobile).",
+    ap_h1="Política de privacidade — Pediatria LEKI",
+    ap_version="Versão de 9 de novembro de 2026 · aplicativo para Android",
+    ap=[
+        ("O aplicativo não coleta nem transmite dados", "O Pediatria LEKI funciona totalmente no dispositivo: não exige conta, não usa a internet (não tem permissão de acesso à rede) e não contém anúncios, ferramentas de análise nem de rastreamento. O editor não recebe nenhum dado pessoal nem dado de saúde."),
+        ("Dados do caso", "Peso, idade, data de nascimento, idade gestacional e comprimento são usados apenas para os cálculos mostrados na tela. Eles não são salvos — desaparecem ao escolher “Novo caso” ou ao fechar o aplicativo. Use dados fictícios nos exercícios. Não insira dados pessoais de pacientes reais, inclusive nos campos de texto do catálogo."),
+        ("O que fica no dispositivo", "O aplicativo salva apenas: o idioma escolhido, o tamanho do texto, seu catálogo próprio de medicamentos (se você criar um) e a ordem do catálogo. Esses dados não saem do dispositivo e não entram no backup do Android. Desinstalar o aplicativo ou limpar seus dados os apaga definitivamente."),
+        ("Cópia do catálogo em arquivo", "O arquivo de cópia só é criado quando você escolhe “Salvar cópia em arquivo” e é salvo no local indicado na janela do sistema. Ao carregar uma cópia, é lido apenas o arquivo que você selecionar. O que acontece depois com o arquivo (compartilhar, apagar) é decisão sua."),
+        ("Links para fontes", "Os links para bulas, diretrizes e publicações abrem em um navegador externo. A partir daí, vale a política de privacidade do site visitado."),
+        ("Permissões e destinatários", "O aplicativo não solicita permissões do sistema e não compartilha dados com terceiros. Destina-se ao treinamento de profissionais de saúde, não a crianças."),
+        ("Alterações e contato", "Uma nova versão desta política aparecerá no aplicativo e neste endereço, com a respectiva data."),
+    ],
+    ap_publisher="Editor", ap_contact="contato",
+)
+
+# ---------------------------------------------------------------- ITALIANO
+T["it"] = dict(
+    nav=["Home", "Pediatria LEKI", "Contatti", "Privacy"],
+    lang_aria="Lingua",
+    home_title="MikoSokPhoto – Mikołaj Sokołowski",
+    home_desc="MikoSokPhoto Mikołaj Sokołowski – Cracovia, Polonia. Dati aziendali e contatti.",
+    home_sub="Mikołaj Sokołowski · Cracovia, Polonia",
+    logo_alt="Logo MikoSokPhoto",
+    contact_title="Contatti – MikoSokPhoto",
+    contact_desc="Recapiti di MikoSokPhoto Mikołaj Sokołowski, Cracovia, Polonia.",
+    contact_h1="Contatti",
+    labels=["Azienda", "Indirizzo", "N. identificativo fiscale (NIP)", "E-mail", "Telefono"],
+    country="Polonia",
+    priv_title="Informativa sulla privacy – MikoSokPhoto",
+    priv_desc="Informativa sulla privacy del sito e delle app di MikoSokPhoto.",
+    priv_h1="Informativa sulla privacy",
+    priv_date="In vigore dal 12 novembre 2026.",
+    priv=[
+        ("1. Titolare del trattamento", f"Il titolare del trattamento dei dati personali è Mikołaj Sokołowski, che esercita un’attività d’impresa con la denominazione {COMPANY}, {STREET}, {CITY}, Polonia, n. identificativo fiscale (NIP) {NIP}. Contatto per questioni relative ai dati personali: {M}."),
+        ("2. Ambito", "La presente informativa riguarda il sito mikosokphoto.pl e le app mobili pubblicate da MikoSokPhoto su Google Play."),
+        ("3. Sito web", "Il sito non utilizza cookie, strumenti di analisi né moduli. È ospitato su GitHub Pages (GitHub, Inc.), che può registrare automaticamente dati tecnici di connessione, come l’indirizzo IP, per garantire la sicurezza e il funzionamento del servizio. Il trattamento di tali dati da parte di GitHub è descritto nell’informativa sulla privacy di GitHub."),
+        ("4. Contatto via e-mail e telefono", "Se ci contatti via e-mail o telefono, trattiamo i dati che ci fornisci (ad es. nome, indirizzo e-mail, numero di telefono, contenuto del messaggio) esclusivamente per rispondere e gestire la tua richiesta, sulla base dell’art. 6, par. 1, lett. f) del GDPR (legittimo interesse). Conserviamo i dati per il tempo necessario a gestire la richiesta e, successivamente, per il periodo di prescrizione di eventuali pretese."),
+        ("5. App mobili", f"Le app di MikoSokPhoto non richiedono un account e non raccolgono dati personali, salvo diversa indicazione nella descrizione della singola app. I dati inseriti nelle app sono memorizzati localmente sul dispositivo dell’utente e non vengono inviati al titolare. Le autorizzazioni richieste sono utilizzate solo per le funzioni dell’app. Se un’app tratta dati aggiuntivi, ciò è indicato nella presente informativa e nella sezione «Sicurezza dei dati» della sua scheda su Google Play. L’app Pediatria LEKI dispone di una propria <a {APPPRIV}>informativa sulla privacy</a> dettagliata."),
+        ("6. Destinatari", "I dati non vengono venduti né ceduti a terzi per finalità di marketing. Possono essere comunicati solo a fornitori di servizi tecnici (ad es. hosting, posta elettronica) nella misura necessaria, oppure alle autorità autorizzate per legge."),
+        ("7. I tuoi diritti", f"Hai il diritto di accedere ai tuoi dati, di rettificarli, cancellarli, limitarne il trattamento, alla portabilità e di opporti al trattamento. Puoi inoltre proporre reclamo all’autorità di controllo polacca, il Presidente dell’Ufficio per la protezione dei dati personali (UODO, ul. Stawki 2, 00-193 Varsavia). Per esercitare i tuoi diritti, scrivi a {M}."),
+        ("8. Modifiche", "La presente informativa può essere aggiornata, ad esempio in occasione della pubblicazione di nuove app. La versione aggiornata è sempre disponibile in questa pagina."),
+    ],
+    app_title="Pediatria LEKI – MikoSokPhoto",
+    app_desc="Pediatria LEKI – app formativa per il calcolo rapido delle dosi dei farmaci nei corsi di simulazione medica pediatrica.",
+    app_lead="App formativa per il calcolo rapido delle dosi dei farmaci negli scenari di simulazione medica pediatrica.",
+    app_notice="<strong>Solo per formazione e simulazione.</strong> L’app serve per esercitarsi su casi didattici durante i corsi di pediatria. Non è destinata a prendere decisioni su pazienti reali e non è stata validata per l’uso clinico.",
+    app_sections=[
+        ("A cosa serve", [
+            "Pediatria LEKI è nata per i corsi e le sessioni di simulazione di emergenza pediatrica. Permette a partecipanti e istruttori di calcolare in pochi secondi le dosi dei farmaci, le velocità di infusione e le misure dei presidi per il bambino o il neonato dello scenario, così da concentrarsi sulla gestione durante l’esercitazione e, dopo, sul debriefing.",
+            "Basta inserire i dati del caso: l’app mostra le dosi calcolate, le misure dei presidi e i valori di riferimento da confrontare con le decisioni prese durante la simulazione."]),
+        ("Come funziona", [
+            ("Dati del caso", "peso inserito manualmente, stimato dall’età o ricavato dalla lunghezza sul nastro di Broselow. Modalità neonato separata, con peso in grammi, età gestazionale ed età in giorni."),
+            ("Dosi rapide dei farmaci", "riquadri con le dosi calcolate raggruppati in schede (RCP, dolore, respiro, altro), un pannello RSI con i farmaci per l’intubazione e i dettagli di ogni farmaco con schemi posologici e fonti. L’app avvisa quando un farmaco non è indicato per l’età o mancano dati per il calcolo."),
+            ("Parametri vitali", "valori normali per età e, nei neonati, percentili di FC, FR, PAS e PAM."),
+            ("Vie aeree e rianimazione", "misura e profondità di inserimento del tubo, energia di defibrillazione, rapporti RCP e impostazioni iniziali del ventilatore dopo il ROSC."),
+            ("Calcolatrici", "pompa da infusione (concentrazione e velocità in ml/h) e «Calcola dose» per qualsiasi farmaco."),
+            ("Catalogo personale dei farmaci", "l’istruttore può aggiungere farmaci e categorie personali, fissarli alle dosi rapide e trasferire il catalogo su un altro dispositivo con un file di copia."),
+            ("Metodologia, formule e fonti", "descrizione dei calcoli e delle fonti dei dati (tra cui RCP dei prodotti, ERC, UK-WHO), utile durante il debriefing.")]),
+        ("Privacy e funzionamento offline", [
+            f"L’app funziona interamente sul dispositivo: senza account, senza internet, senza pubblicità né analisi. I dati del caso non vengono salvati né inviati. Nelle esercitazioni usa solo dati fittizi. Dettagli: <a {APPPRIV}>informativa sulla privacy di Pediatria LEKI</a>."]),
+        ("Per chi", [
+            "Per partecipanti e istruttori dei corsi di pediatria, studenti e personale sanitario che si esercita su scenari di simulazione. L’app non è destinata ai bambini."]),
+        ("Disponibilità", [
+            "App per Android (presto su Google Play) e versione utilizzabile nel browser. Lingue: polacco, inglese, tedesco, spagnolo, francese, ucraino, portoghese (Brasile), italiano e turco."]),
+    ],
+    ap_title="Informativa sulla privacy – Pediatria LEKI",
+    ap_desc="Informativa sulla privacy dell’app Pediatria LEKI (pl.pediatrialeki.mobile).",
+    ap_h1="Informativa sulla privacy — Pediatria LEKI",
+    ap_version="Versione del 9 novembre 2026 · app per Android",
+    ap=[
+        ("L’app non raccoglie né trasmette dati", "Pediatria LEKI funziona interamente sul dispositivo: non richiede un account, non usa internet (non ha l’autorizzazione di accesso alla rete) e non contiene pubblicità, strumenti di analisi o di tracciamento. L’editore non riceve alcun dato personale né dato sanitario."),
+        ("Dati del caso", "Peso, età, data di nascita, età gestazionale e lunghezza servono solo per i calcoli mostrati sullo schermo. Non vengono salvati: scompaiono dopo aver scelto «Nuovo caso» o alla chiusura dell’app. Nelle esercitazioni usa dati fittizi. Non inserire dati personali di pazienti reali, nemmeno nei campi di testo del catalogo."),
+        ("Cosa resta sul dispositivo", "L’app salva solo: la lingua scelta, la dimensione del testo, il tuo catalogo personale dei farmaci (se lo crei) e l’ordinamento del catalogo. Questi dati non lasciano il dispositivo e non sono inclusi nel backup di Android. Disinstallare l’app o cancellarne i dati li elimina definitivamente."),
+        ("Copia del catalogo su file", "Il file di copia viene creato solo quando scegli «Salva copia su file» e viene salvato nella posizione indicata nella finestra di sistema. Il caricamento di una copia legge solo il file che selezioni. Cosa accade poi al file (condivisione, eliminazione) lo decidi tu."),
+        ("Link alle fonti", "I link a RCP, linee guida e pubblicazioni si aprono in un browser esterno. Da quel momento si applica l’informativa sulla privacy del sito visitato."),
+        ("Autorizzazioni e destinatari", "L’app non richiede autorizzazioni di sistema e non comunica dati a terzi. È destinata alla formazione del personale sanitario, non ai bambini."),
+        ("Modifiche e contatti", "Una nuova versione di questa informativa comparirà nell’app e a questo indirizzo, con la relativa data."),
+    ],
+    ap_publisher="Editore", ap_contact="contatti",
+)
+
+# ---------------------------------------------------------------- TÜRKÇE
+T["tr"] = dict(
+    nav=["Ana sayfa", "Pediatria LEKI", "İletişim", "Gizlilik"],
+    lang_aria="Dil",
+    home_title="MikoSokPhoto – Mikołaj Sokołowski",
+    home_desc="MikoSokPhoto Mikołaj Sokołowski – Krakov, Polonya. Şirket bilgileri ve iletişim.",
+    home_sub="Mikołaj Sokołowski · Krakov, Polonya",
+    logo_alt="MikoSokPhoto logosu",
+    contact_title="İletişim – MikoSokPhoto",
+    contact_desc="MikoSokPhoto Mikołaj Sokołowski iletişim bilgileri, Krakov, Polonya.",
+    contact_h1="İletişim",
+    labels=["Şirket", "Adres", "Vergi numarası (NIP)", "E-posta", "Telefon"],
+    country="Polonya",
+    priv_title="Gizlilik politikası – MikoSokPhoto",
+    priv_desc="MikoSokPhoto web sitesi ve uygulamalarının gizlilik politikası.",
+    priv_h1="Gizlilik politikası",
+    priv_date="12 Kasım 2026 tarihinden itibaren geçerlidir.",
+    priv=[
+        ("1. Veri sorumlusu", f"Kişisel verilerin sorumlusu, {COMPANY} unvanıyla ticari faaliyet yürüten Mikołaj Sokołowski'dir; {STREET}, {CITY}, Polonya, vergi numarası (NIP) {NIP}. Kişisel verilerle ilgili konularda iletişim: {M}."),
+        ("2. Kapsam", "Bu politika mikosokphoto.pl web sitesini ve MikoSokPhoto tarafından Google Play'de yayımlanan mobil uygulamaları kapsar."),
+        ("3. Web sitesi", "Web sitesi çerez, analiz aracı veya form kullanmaz. Site GitHub Pages (GitHub, Inc.) üzerinde barındırılır; GitHub, hizmetin güvenliğini ve işleyişini sağlamak için IP adresi gibi teknik bağlantı verilerini otomatik olarak kaydedebilir. GitHub'ın bu verileri nasıl işlediği GitHub gizlilik bildiriminde açıklanmıştır."),
+        ("4. E-posta ve telefonla iletişim", "Bizimle e-posta veya telefonla iletişime geçerseniz, ilettiğiniz verileri (örneğin ad, e-posta adresi, telefon numarası, mesaj içeriği) yalnızca yanıt vermek ve talebinizi işleme almak amacıyla, AB Genel Veri Koruma Tüzüğü (GDPR) md. 6/1(f) (meşru menfaat) uyarınca işleriz. Verileri talebi işlemek için gereken süre boyunca ve ardından olası taleplerin zamanaşımı süresince saklarız."),
+        ("5. Mobil uygulamalar", f"MikoSokPhoto uygulamaları hesap gerektirmez ve ilgili uygulamanın açıklamasında aksi belirtilmedikçe kişisel veri toplamaz. Uygulamalara girilen veriler kullanıcının cihazında yerel olarak saklanır ve veri sorumlusuna gönderilmez. Uygulamanın istediği izinler yalnızca uygulamanın işlevleri için kullanılır. Bir uygulama ek veri işliyorsa bu durum bu politikada ve Google Play sayfasındaki “Veri güvenliği” bölümünde belirtilir. Pediatria LEKI uygulamasının kendine ait ayrıntılı bir <a {APPPRIV}>gizlilik politikası</a> vardır."),
+        ("6. Alıcılar", "Veriler satılmaz ve pazarlama amacıyla üçüncü taraflarla paylaşılmaz. Yalnızca gerekli ölçüde teknik hizmet sağlayıcılara (örneğin barındırma, e-posta) veya yasal olarak yetkili makamlara aktarılabilir."),
+        ("7. Haklarınız", f"Verilerinize erişme, bunları düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve işlemeye itiraz etme haklarına sahipsiniz. Ayrıca Polonya denetim makamına, Kişisel Verileri Koruma Ofisi Başkanlığına (UODO, ul. Stawki 2, 00-193 Varşova) şikâyette bulunabilirsiniz. Haklarınızı kullanmak için {M} adresine yazın."),
+        ("8. Değişiklikler", "Bu politika, örneğin yeni uygulamalar yayımlandığında güncellenebilir. Güncel sürüm her zaman bu sayfada yer alır."),
+    ],
+    app_title="Pediatria LEKI – MikoSokPhoto",
+    app_desc="Pediatria LEKI – pediatrik tıbbi simülasyon kurslarında ilaç dozlarını hızla hesaplamak için eğitim uygulaması.",
+    app_lead="Pediatrik tıbbi simülasyon senaryolarında ilaç dozlarını hızla hesaplamak için eğitim uygulaması.",
+    app_notice="<strong>Yalnızca eğitim ve simülasyon içindir.</strong> Uygulama, pediatri kurslarında eğitim vakaları üzerinde pratik yapmak için tasarlanmıştır. Gerçek hastalarla ilgili karar vermek için tasarlanmamıştır ve klinik kullanım için doğrulanmamıştır.",
+    app_sections=[
+        ("Ne için kullanılır", [
+            "Pediatria LEKI, pediatrik acil bakım kursları ve simülasyon eğitimleri için geliştirildi. Katılımcıların ve eğitmenlerin senaryodaki çocuk veya yenidoğan için ilaç dozlarını, infüzyon hızlarını ve ekipman boyutlarını saniyeler içinde hesaplamasını sağlar; böylece alıştırma sırasında müdahaleye, sonrasında ise sonuçların değerlendirilmesine odaklanılabilir.",
+            "Vaka verilerini girmeniz yeterlidir: uygulama hesaplanan dozları, ekipman boyutlarını ve simülasyonda verilen kararlarla karşılaştırmak için referans değerleri gösterir."]),
+        ("Nasıl çalışır", [
+            ("Vaka verileri", "elle girilen, yaştan tahmin edilen veya Broselow şeridinde boya göre okunan ağırlık. Gram cinsinden ağırlık, gebelik haftası ve gün cinsinden yaş ile ayrı yenidoğan modu."),
+            ("Hızlı ilaç dozları", "sekmelere (KPR, ağrı, solunum, diğer) ayrılmış hesaplanmış doz kartları, entübasyon ilaçlarını içeren HSE paneli ve her ilacın dozaj şemaları ile kaynaklarını içeren ayrıntıları. İlaç bu yaş için uygun olmadığında veya hesaplama için veri eksik olduğunda uygulama uyarır."),
+            ("Yaşam bulguları", "yaşa göre normal değerler; yenidoğanlarda KH, SS, SKB ve OAB persentilleri."),
+            ("Hava yolu ve resüsitasyon", "tüp boyutu ve yerleştirme derinliği, defibrilasyon enerjisi, KPR oranları ve SDGD sonrası başlangıç ventilatör ayarları."),
+            ("Hesaplayıcılar", "infüzyon pompası (konsantrasyon ve ml/h cinsinden hız) ve her ilaç için “Doz Hesapla”."),
+            ("Kişisel ilaç kataloğu", "eğitmen kendi ilaçlarını ve kategorilerini ekleyebilir, bunları hızlı dozlara sabitleyebilir ve kataloğu bir yedek dosyasıyla başka bir cihaza taşıyabilir."),
+            ("Yöntem, formüller ve kaynaklar", "hesaplamaların ve veri kaynaklarının (KÜB, ERC, UK-WHO dahil) açıklaması; senaryo değerlendirmesinde faydalıdır.")]),
+        ("Gizlilik ve çevrimdışı çalışma", [
+            f"Uygulama tamamen cihaz üzerinde çalışır: hesap, internet, reklam veya analiz yoktur. Vaka verileri kaydedilmez ve gönderilmez. Alıştırmalarda yalnızca kurgusal veriler kullanın. Ayrıntılar: <a {APPPRIV}>Pediatria LEKI gizlilik politikası</a>."]),
+        ("Kimler için", [
+            "Pediatri kurslarının katılımcıları ve eğitmenleri, öğrenciler ve simülasyon senaryoları üzerinde çalışan sağlık personeli için. Uygulama çocuklara yönelik değildir."]),
+        ("Kullanılabilirlik", [
+            "Android uygulaması (yakında Google Play'de) ve tarayıcıda çalışan sürüm. Diller: Lehçe, İngilizce, Almanca, İspanyolca, Fransızca, Ukraynaca, Portekizce (Brezilya), İtalyanca ve Türkçe."]),
+    ],
+    ap_title="Gizlilik politikası – Pediatria LEKI",
+    ap_desc="Pediatria LEKI uygulamasının gizlilik politikası (pl.pediatrialeki.mobile).",
+    ap_h1="Gizlilik politikası — Pediatria LEKI",
+    ap_version="9 Kasım 2026 tarihli sürüm · Android uygulaması",
+    ap=[
+        ("Uygulama veri toplamaz ve iletmez", "Pediatria LEKI tamamen cihaz üzerinde çalışır: hesap gerektirmez, internet kullanmaz (ağ erişim izni yoktur) ve reklam, analiz veya izleme aracı içermez. Yayıncı hiçbir kişisel veri veya sağlık verisi almaz."),
+        ("Vaka verileri", "Ağırlık, yaş, doğum tarihi, gebelik haftası ve boy yalnızca ekranda gösterilen hesaplamalar için kullanılır. Kaydedilmezler; “Yeni vaka” seçildiğinde veya uygulama kapatıldığında silinirler. Alıştırmalarda kurgusal veriler kullanın. Katalogdaki metin alanları dahil, gerçek hastaların kişisel verilerini girmeyin."),
+        ("Cihazda kalanlar", "Uygulama yalnızca şunları kaydeder: seçilen dil, metin boyutu, kişisel ilaç kataloğunuz (oluşturursanız) ve kataloğun sıralama düzeni. Bu veriler cihazdan çıkmaz ve Android yedeklemesine dahil edilmez. Uygulamayı kaldırmak veya verilerini temizlemek bunları kalıcı olarak siler."),
+        ("Katalog yedeği dosyası", "Yedek dosyası yalnızca “Yedeği dosyaya kaydet” seçildiğinde oluşturulur ve sistem kaydetme penceresinde seçilen konuma kaydedilir. Yedek yüklenirken yalnızca seçtiğiniz dosya okunur. Dosyanın sonrasında ne olacağına (paylaşma, silme) siz karar verirsiniz."),
+        ("Kaynak bağlantıları", "KÜB'lere, kılavuzlara ve yayınlara verilen bağlantılar harici bir tarayıcıda açılır. Bu andan itibaren ziyaret edilen sitenin gizlilik politikası geçerlidir."),
+        ("İzinler ve alıcılar", "Uygulama hiçbir sistem izni istemez ve verileri üçüncü taraflarla paylaşmaz. Çocuklar için değil, sağlık personelinin eğitimi için tasarlanmıştır."),
+        ("Değişiklikler ve iletişim", "Bu politikanın yeni sürümü tarihiyle birlikte uygulamada ve bu adreste yayımlanır."),
+    ],
+    ap_publisher="Yayıncı", ap_contact="iletişim",
+)

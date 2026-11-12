@@ -9,9 +9,9 @@ PHONE = "+48 604 927 086"
 STREET = "ul. Meissnera 6/76"
 CITY = "31-457 Kraków"
 
-LANGS = ["pl", "en", "de", "es", "fr", "uk"]
-LANG_LABEL = {"pl": "PL", "en": "EN", "de": "DE", "es": "ES", "fr": "FR", "uk": "UA"}
-LANG_NAME = {"pl": "Polski", "en": "English", "de": "Deutsch", "es": "Español", "fr": "Français", "uk": "Українська"}
+LANGS = ["pl", "en", "de", "es", "fr", "uk", "pt", "it", "tr"]
+LANG_LABEL = {"pl": "PL", "en": "EN", "de": "DE", "es": "ES", "fr": "FR", "uk": "UA", "pt": "PT", "it": "IT", "tr": "TR"}
+LANG_NAME = {"pl": "Polski", "en": "English", "de": "Deutsch", "es": "Español", "fr": "Français", "uk": "Українська", "pt": "Português (Brasil)", "it": "Italiano", "tr": "Türkçe"}
 
 M = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
 APPPRIV = 'href="pediatria-leki-prywatnosc.html"'
@@ -66,7 +66,7 @@ T["pl"] = dict(
         ("Dla kogo", [
             "Dla uczestników i instruktorów kursów pediatrycznych, studentów oraz personelu medycznego ćwiczącego scenariusze symulacyjne. Aplikacja nie jest przeznaczona dla dzieci."]),
         ("Dostępność", [
-            "Aplikacja na Androida (wkrótce w Google Play) oraz wersja uruchamiana w przeglądarce. Dostępne języki: polski, angielski, niemiecki, hiszpański, francuski i ukraiński."]),
+            "Aplikacja na Androida (wkrótce w Google Play) oraz wersja uruchamiana w przeglądarce. Dostępne języki: polski, angielski, niemiecki, hiszpański, francuski, ukraiński, portugalski (Brazylia), włoski i turecki."]),
     ],
     ap_title="Polityka prywatności – Pediatria LEKI",
     ap_desc="Polityka prywatności aplikacji Pediatria LEKI (pl.pediatrialeki.mobile).",
@@ -124,7 +124,7 @@ T["en"] = dict(
             ("Quick drug doses", "tiles with calculated doses grouped into tabs (CPR, pain, breathing, other), an RSI panel with intubation drugs, and details of each drug with dosing regimens and sources. The app warns when a drug is not intended for the given age or when data needed for the calculation is missing."),
             ("Vital signs", "age-specific normal ranges and, for newborns, HR, RR, SBP and MAP centiles."),
             ("Airway and resuscitation", "tube size and insertion depth, defibrillation energy, CPR ratios and initial ventilator settings after ROSC."),
-            ("Calculators", "infusion pump (concentration and rate in ml/h) and “Recalculate dose” for any drug."),
+            ("Calculators", "infusion pump (concentration and rate in ml/h) and “Calculate Dose” for any drug."),
             ("Custom drug catalogue", "instructors can add their own drugs and categories, pin them to quick doses and move the catalogue to another device using a backup file."),
             ("Methodology, formulas and sources", "how the calculations are made and where the data comes from (incl. SmPC, ERC, UK-WHO), useful when debriefing a scenario.")]),
         ("Privacy and offline use", [
@@ -132,7 +132,7 @@ T["en"] = dict(
         ("Who it is for", [
             "Participants and instructors of paediatric courses, students and medical staff practising simulation scenarios. The app is not intended for children."]),
         ("Availability", [
-            "Android app (coming soon to Google Play) and a version that runs in the browser. Languages: Polish, English, German, Spanish, French and Ukrainian."]),
+            "Android app (coming soon to Google Play) and a version that runs in the browser. Languages: Polish, English, German, Spanish, French, Ukrainian, Portuguese (Brazil), Italian and Turkish."]),
     ],
     ap_title="Privacy policy – Pediatria LEKI",
     ap_desc="Privacy policy of the Pediatria LEKI app (pl.pediatrialeki.mobile).",
@@ -198,7 +198,7 @@ T["de"] = dict(
         ("Für wen", [
             "Für Teilnehmende und Ausbildende pädiatrischer Kurse, Studierende und medizinisches Personal, das Simulationsszenarien übt. Die App ist nicht für Kinder bestimmt."]),
         ("Verfügbarkeit", [
-            "Android-App (demnächst bei Google Play) und eine Version für den Browser. Sprachen: Polnisch, Englisch, Deutsch, Spanisch, Französisch und Ukrainisch."]),
+            "Android-App (demnächst bei Google Play) und eine Version für den Browser. Sprachen: Polnisch, Englisch, Deutsch, Spanisch, Französisch, Ukrainisch, Portugiesisch (Brasilien), Italienisch und Türkisch."]),
     ],
     ap_title="Datenschutzerklärung – Pediatria LEKI",
     ap_desc="Datenschutzerklärung der App Pediatria LEKI (pl.pediatrialeki.mobile).",
@@ -256,7 +256,7 @@ T["es"] = dict(
             ("Dosis rápidas", "fichas con las dosis calculadas agrupadas en pestañas (RCP, dolor, respiración, otros), un panel de secuencia rápida de intubación (SRI) y la ficha de cada fármaco con pautas de dosificación y fuentes. La aplicación avisa cuando un fármaco no está indicado para esa edad o faltan datos para el cálculo."),
             ("Constantes vitales", "valores normales según la edad y, en recién nacidos, percentiles de FC, FR, PAS y PAM."),
             ("Vía aérea y reanimación", "tamaño y profundidad de inserción del tubo, energía de desfibrilación, relaciones de RCP y ajustes iniciales del respirador tras la RCE."),
-            ("Calculadoras", "bomba de perfusión (concentración y velocidad en ml/h) y «Recalcular dosis» para cualquier fármaco."),
+            ("Calculadoras", "bomba de perfusión (concentración y velocidad en ml/h) y «Calcular dosis» para cualquier fármaco."),
             ("Catálogo propio de fármacos", "el instructor puede añadir sus propios fármacos y categorías, fijarlos en las dosis rápidas y trasladar el catálogo a otro dispositivo mediante un archivo de copia."),
             ("Metodología, fórmulas y fuentes", "descripción de los cálculos y de las fuentes de datos (p. ej., fichas técnicas, ERC, UK-WHO), útil en el debriefing del escenario.")]),
         ("Privacidad y funcionamiento sin conexión", [
@@ -264,7 +264,7 @@ T["es"] = dict(
         ("Para quién", [
             "Para participantes e instructores de cursos pediátricos, estudiantes y personal sanitario que practica escenarios de simulación. La aplicación no está destinada a niños."]),
         ("Disponibilidad", [
-            "Aplicación para Android (próximamente en Google Play) y versión que se ejecuta en el navegador. Idiomas: polaco, inglés, alemán, español, francés y ucraniano."]),
+            "Aplicación para Android (próximamente en Google Play) y versión que se ejecuta en el navegador. Idiomas: polaco, inglés, alemán, español, francés, ucraniano, portugués (Brasil), italiano y turco."]),
     ],
     ap_title="Política de privacidad – Pediatria LEKI",
     ap_desc="Política de privacidad de la aplicación Pediatria LEKI (pl.pediatrialeki.mobile).",
@@ -330,7 +330,7 @@ T["fr"] = dict(
         ("Pour qui", [
             "Pour les participants et formateurs des formations en pédiatrie, les étudiants et le personnel médical qui s’entraînent sur des scénarios de simulation. L’application n’est pas destinée aux enfants."]),
         ("Disponibilité", [
-            "Application Android (bientôt sur Google Play) et version utilisable dans le navigateur. Langues : polonais, anglais, allemand, espagnol, français et ukrainien."]),
+            "Application Android (bientôt sur Google Play) et version utilisable dans le navigateur. Langues : polonais, anglais, allemand, espagnol, français, ukrainien, portugais (Brésil), italien et turc."]),
     ],
     ap_title="Politique de confidentialité – Pediatria LEKI",
     ap_desc="Politique de confidentialité de l’application Pediatria LEKI (pl.pediatrialeki.mobile).",
@@ -388,7 +388,7 @@ T["uk"] = dict(
             ("Швидкі дози ліків", "плитки з розрахованими дозами, згруповані у вкладки (СЛР, біль, дихання, інше), панель RSI з препаратами для інтубації та картка кожного препарату зі схемами дозування й джерелами. Застосунок попереджає, коли препарат не призначений для цього віку або бракує даних для розрахунку."),
             ("Життєві показники", "вікові норми, а для новонароджених — центилі ЧСС, ЧД, САТ і СерАТ."),
             ("Дихальні шляхи та реанімація", "розмір і глибина введення трубки, енергія дефібриляції, співвідношення СЛР і початкові налаштування апарата ШВЛ після ROSC."),
-            ("Калькулятори", "інфузійна помпа (концентрація та швидкість у мл/год) і «Перерахувати дозу» для будь-якого препарату."),
+            ("Калькулятори", "інфузійна помпа (концентрація та швидкість у мл/год) і «Перерахунок дози» для будь-якого препарату."),
             ("Власний каталог ліків", "інструктор може додати власні препарати й категорії, закріпити їх у швидких дозах і перенести каталог на інший пристрій за допомогою файлу резервної копії."),
             ("Методика, формули та джерела", "опис способу розрахунку та джерел даних (зокрема інструкції до препаратів, ERC, UK-WHO), корисний під час розбору сценарію.")]),
         ("Конфіденційність і робота офлайн", [
@@ -396,7 +396,7 @@ T["uk"] = dict(
         ("Для кого", [
             "Для учасників та інструкторів педіатричних курсів, студентів і медичного персоналу, який відпрацьовує симуляційні сценарії. Застосунок не призначений для дітей."]),
         ("Доступність", [
-            "Застосунок для Android (незабаром у Google Play) і версія, що запускається в браузері. Мови: польська, англійська, німецька, іспанська, французька та українська."]),
+            "Застосунок для Android (незабаром у Google Play) і версія, що запускається в браузері. Мови: польська, англійська, німецька, іспанська, французька, українська, португальська (Бразилія), італійська та турецька."]),
     ],
     ap_title="Політика конфіденційності – Pediatria LEKI",
     ap_desc="Політика конфіденційності застосунку Pediatria LEKI (pl.pediatrialeki.mobile).",

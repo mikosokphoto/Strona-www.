@@ -3,6 +3,8 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from content import *
+import content_nowe  # noqa: F401  (pt, it, tr)
+HL = {"pt": "pt-BR"}
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/mikosokphoto.pl"
 SITE = "https://mikosokphoto.pl/"
@@ -19,16 +21,16 @@ def page(lang, fname, title, desc, body):
     t = T[lang]
     up = "" if lang == "pl" else "../"
     alts = "\n".join(
-        f'  <link rel="alternate" hreflang="{l}" href="{SITE}{folder(l)}{"" if fname == "index.html" else fname}">' for l in LANGS)
+        f'  <link rel="alternate" hreflang="{HL.get(l, l)}" href="{SITE}{folder(l)}{"" if fname == "index.html" else fname}">' for l in LANGS)
     alts += f'\n  <link rel="alternate" hreflang="x-default" href="{SITE}{"" if fname == "index.html" else fname}">'
     nav = "\n".join(
         f'        <a href="{f}"{" aria-current=\"page\"" if ACTIVE[fname] == i else ""}>{t["nav"][i]}</a>'
         for i, f in enumerate(NAV_FILES))
     langs = "\n".join(
-        f'        <a href="{up}{folder(l)}{fname}" hreflang="{l}" lang="{l}" title="{LANG_NAME[l]}"{" aria-current=\"true\"" if l == lang else ""}>{LANG_LABEL[l]}</a>'
+        f'        <a href="{up}{folder(l)}{fname}" hreflang="{HL.get(l, l)}" lang="{HL.get(l, l)}" title="{LANG_NAME[l]}"{" aria-current=\"true\"" if l == lang else ""}>{LANG_LABEL[l]}</a>'
         for l in LANGS)
     return f"""<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="{HL.get(lang, lang)}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
