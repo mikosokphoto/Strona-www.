@@ -6,6 +6,27 @@ from content import *
 import content_nowe  # noqa: F401  (pt, it, tr)
 HL = {"pt": "pt-BR"}
 
+# Nazwa aplikacji tak, jak tłumaczy ją sama aplikacja (klucz „Pediatria LEKI” w Ui/wwwroot/<język>.json)
+APP_NAME = {"pl": "Pediatria LEKI", "en": "Paediatric DRUGS", "de": "Pädiatrie MEDIKAMENTE",
+            "es": "Pediatría FÁRMACOS", "fr": "Pédiatrie MÉDICAMENTS", "uk": "Педіатрія ЛІКИ",
+            "pt": "Pediatria MEDICAMENTOS", "it": "Pediatria FARMACI", "tr": "Pediatrik İLAÇLAR"}
+
+
+def localize(o, name):
+    if isinstance(o, str):
+        return o.replace("Pediatria LEKI", name)
+    if isinstance(o, list):
+        return [localize(x, name) for x in o]
+    if isinstance(o, tuple):
+        return tuple(localize(x, name) for x in o)
+    if isinstance(o, dict):
+        return {k: localize(v, name) for k, v in o.items()}
+    return o
+
+
+for _l in LANGS:
+    T[_l] = localize(T[_l], APP_NAME[_l])
+
 OUT = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/mikosokphoto.pl"
 SITE = "https://mikosokphoto.pl/"
 PAGES = ["index.html", "pediatria-leki.html", "kontakt.html", "polityka-prywatnosci.html", "pediatria-leki-prywatnosc.html"]
@@ -89,7 +110,7 @@ def build(lang):
         <h1>MikoSokPhoto</h1>
         <p>{t["home_sub"]}</p>
         <div class="buttons">
-          <a class="button" href="pediatria-leki.html">Pediatria LEKI</a>
+          <a class="button" href="pediatria-leki.html">{APP_NAME[lang]}</a>
           <a class="button" href="kontakt.html">{t["nav"][2]}</a>
         </div>
       </section>""")
@@ -126,7 +147,7 @@ def build(lang):
         else:
             ps = "\n".join(f"        <p>{p}</p>" for p in content)
             parts.append(f"        <h2{style}>{h}</h2>\n{ps}")
-    files["pediatria-leki.html"] = page(lang, "pediatria-leki.html", t["app_title"], t["app_desc"], f"""      <h1>Pediatria LEKI</h1>
+    files["pediatria-leki.html"] = page(lang, "pediatria-leki.html", t["app_title"], t["app_desc"], f"""      <h1>{APP_NAME[lang]}</h1>
       <p class="lead">{t["app_lead"]}</p>
 
       <div class="notice">
